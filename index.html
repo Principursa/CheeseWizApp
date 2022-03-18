@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheeseWiz</title>
+ <style>
+      /*       * {
+          font-family: 'Roboto', sans-serif;
+          box-sizing: border-box;
+      }
+      @supports (font-variation-settings: normal) {
+          * {
+              font-family: 'Roboto', sans-serif;
+          }
+      }
+ */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      button {
+        user-select: none;
+      }
+
+      html {
+        font-size: 16px;
+        font-variant: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+    
+
+      html {
+        min-height: 100%;
+      }
+/* 
+      @media (prefers-color-scheme: dark) {
+        html {
+          background-color: #212429;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        html {
+          background-color: #f7f8fa;
+        }
+      } */
+  #background-radial-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        width: 200vw;
+        height: 200vh;
+        background: #1c1faf;
+        background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+        background: linear-gradient(90deg, #222358 0%, #195e97 100%);
+
+        transform: translate(-50vw, -100vh);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="background-radial-gradient"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
